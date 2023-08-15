@@ -1,0 +1,77 @@
+
+
+.container-fluid{
+    flex-wrap: wrap;
+   background-color: bisque;
+}
+
+#heading{
+    text-align: center;
+    color: white;
+    background-color: green
+}
+#heading2{
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+#heading3{
+    text-align: center;
+    color: white;
+    background-color: brown;
+}
+
+
+
+div{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+.story{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.card{
+    align-items: center;
+}
+
+/*for screen with 768px or less get a modified table*/
+@media 
+only screen and (max-width: 768px){
+
+	/* Force table to turn into blocks*/
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers for accessibility */
+	thead tr { 
+		position: absolute;
+		top: -9000px;
+		left: -9000px;
+	}
+/*border for each row*/
+	tr { border: 1px solid #ccc; }
+	
+/*behave like a row, modify the table cells*/
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	/* Like a table header */
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 50%; 
+		padding-right: 10px; 
+		white-space: wrap;
+	}
+}

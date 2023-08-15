@@ -1,0 +1,103 @@
+<!--Create a new website using HTML and Bootstrap. The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+     <body class="container-fluid">
+<!--created a container-fluid so that it will take up all the width in the view port and expand or shrink
+nav class to create a dark nav bar, purpose to be a button that collapes, first its false to show that its together not collapsed down,
+ when it shows a toggler icon-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="about.html">Mexico City visits</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+<!--under collapsed navbar, these three links will show up in a unorderer list-->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="more.html">Places</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="more.html">Send Recommendations</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+<!--Wrote a small about on this page, and some of the places ive seen in mexico just by coincidence 
+also added cards of places i've seen in Mexico just by passing but never truly explored-->
+            <h4 class="heading4">My first visits to Mexico</h4>
+            <p class="story">My name is Anayeli Gonzalez and I am Mexican-American. I grew up in the United States and growing up I did not visit Mexico often since my parents
+                saved money and didn't have enough for us (a total of 6) to go. I have gone to Mexico 3 times, once when I was a baby, when I was around 7 years old, and when I was 18 years old.
+                I have only gone to visit family so we have always stayed in the area and have never gone to new areas to visit. In Nov. 2019, I had the opportunity to 
+                go to Mexico for my uncle's wedding. I decided to go since my cousin and brother were going and my uncle lives near the metro stop Los Reyes which leads into the city. My cousin had visited Mexico City on a solo trip prior to the wedding. 
+                She was my guide in the city and showed me different places that I have never seen before despite the trips I've made before with my family. This was the first time I got to explore the 
+                city. I have started to make a list of places I've visted on my 2019 trip, and adding more places to visit since I will be going again in fall 2023 for Dia De Los Muertos.
+            </p>
+<h4 id="heading3">Places I've visited or seen in Mexico when traveling to see family before 2019.</h4>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img class="card-img-top" src="images/eagleStatue.jpg" alt="sculpture of an eagle or man with wings on top of a mountain">
+                    <div class="card-body">
+                    <h5 class="card-title">"The Vigilant" sculpture</h5>
+                    <p class="card-text">Sight seeing leaving Mexico City, saw the Vigilant sculpture.</p>
+                    <a href="https://goo.gl/maps/YL3mZY9DABjS37Ns6" class="btn btn-primary">Location</a>
+                </div>
+                </div>
+            </div>
+             <div class="col-sm">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="images/centerFountain.jpg" alt="Foutain in the town of Izucar de Matamoros">
+                <div class="card-body">
+                  <h5 class="card-title">Plaza de la Constitucion</h5>
+                  <p class="card-text">A foutain in the center of Izucar de Matamoros, Puebla</p>
+                  <a href="https://goo.gl/maps/z1KFtrKPvfvAGQwq7" class="btn btn-primary">Location</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="images/mountainView.jpg" alt="view of mountains from the rooftop">
+                <div class="card-body">
+                  <h5 class="card-title">Mountain view from home</h5>
+                  <p class="card-text">On the rooftop of my grandmother's house, you can see the wonderful mountains.</p>
+                  <a href="https://goo.gl/maps/YL3mZY9DABjS37Ns6" class="btn btn-primary">Location</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="images/church.jpg" alt="Interior picture of a Church in Mexico">
+                <div class="card-body">
+                  <h5 class="card-title">Church</h5>
+                  <p class="card-text">There are many differently designed churches all over Mexico. This church is Caterdral De Tehuacan.</p>
+                  <a href="https://goo.gl/maps/CvJSijRM3GNKePcq6" class="btn btn-primary">Location</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        
+         <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    </body>
+</html>
